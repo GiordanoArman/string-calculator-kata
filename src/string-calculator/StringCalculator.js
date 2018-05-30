@@ -5,8 +5,14 @@ class StringCalculator {
   add(numbers) {
     if (numbers.length <= 0)
       return 0;
-    return parseInt(
-      this.parse(numbers).map(v => parseFloat(v)).reduce((a, b) => a + b, 0));
+
+    const values = this.parse(numbers).map(v => parseFloat(v));
+    
+    const negatives = values.filter(v => v < 0);
+    if (negatives.length > 0)
+      throw new Error(`negatives not allowed: ` + negatives.join(`, `));
+      
+    return parseInt(values.reduce((a, b) => a + b, 0));
   }
 
   parse(numbers) {

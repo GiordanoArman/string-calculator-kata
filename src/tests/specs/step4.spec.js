@@ -1,6 +1,6 @@
 const { StringCalculator } = rootRequire(`string-calculator`);
 
-fdescribe(`StringCalculator.prototype.add`, function() {
+describe(`StringCalculator.prototype.add`, function() {
  
   it(
     `should allow specifying different delimeters`,
