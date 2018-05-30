@@ -12,7 +12,9 @@ class StringCalculator {
   add(numbers) {
     if (numbers.length <= 0)
       return 0;
-    return numbers.split(`,`).map(v => parseInt(v)).reduce((a, b) => a + b, 0);
+    const value = 
+      numbers.split(`,`).map(v => parseFloat(v)).reduce((a, b) => a + b, 0);
+    return parseInt(value, 10);
   }
 
 }
