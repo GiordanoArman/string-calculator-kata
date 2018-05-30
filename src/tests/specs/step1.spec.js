@@ -21,7 +21,6 @@ describe(`StringCalculator.prototype.add`, function() {
       expect(calc.add(`5`)).toBe(5);
       expect(calc.add(`6`)).toBe(6);
       expect(calc.add(`123411234`)).toBe(123411234);
-      expect(calc.add(`-123411234`)).toBe(-123411234);
     }
   );
 });
