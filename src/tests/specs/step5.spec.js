@@ -3,7 +3,7 @@ const { StringCalculator } = rootRequire(`string-calculator`);
 describe(`StringCalculator.prototype.add`, function() {
  
   it(
-    `should throw if called with negative numbers in the `,
+    `should throw if called with negative numbers in the first parameter`,
     async function() {
       let error = null;
       try {

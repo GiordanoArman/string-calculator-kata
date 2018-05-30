@@ -12,7 +12,7 @@ class StringCalculator {
     if (negatives.length > 0)
       throw new Error(`negatives not allowed: ` + negatives.join(`, `));
       
-    return parseInt(values.reduce((a, b) => a + b, 0));
+    return parseInt(values.reduce((a, b) => b > 1000 ? a : (a + b), 0));
   }
 
   parse(numbers) {
