@@ -2,7 +2,7 @@
 
 ## Setup
 * Access this project folder from terminal.
-* Run ``npm run i``
+* Run ``npm i``
 
 ## Test
 * Run ``npm run test``
